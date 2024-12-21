@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+   
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ <!--first bean -->
+ <bean class ="com.spring.collections.Emp" name ="emp1" >
+ <property name="name" value="Radhe"/>
+ <property name="phone">
+ <list>
+ 	<value>2315455455</value>
+ 	<value>9926637944</value>
+ 	<value>9926637944</value>
+ 	<value>8989464321</value>
+ </list>
+ </property>
+ 
+ <property name="address">
+ <set>
+ 	<value>Delhi</value>
+ 	<value>Dubai</value>
+ 	<value>Dubai</value>
+ 	<value>Oman</value>
+ </set>
+ </property>
+ 
+ <property name="courses">
+ <map>
+ 	<entry key="java" value="2 months"/>
+ 	<entry key="java21" value="2 months"/>
+ 	<entry key="Python" value="3 months"/>
+ 	<entry key="C++" value="1 months"/>
+ </map>
+ </property>
+ 
+ </bean>
+ 
+  
+  
+  <!--Second Bean  -->
+  
+ <bean class ="com.springcore.Student" name ="student2" p:studentID="12345" 
+ p:studentName="Bhavya Jain" p:studentAddress="Dubai"/>
+ 
+ 
+  </beans>
